@@ -18,7 +18,7 @@ var Crafty = require("../core/core.js"),
 Crafty.extend({
     assignColor: (function() {
         // Create phantom element to assess color
-        var element = document.createElement("div");
+        const element = document.createElement("div");
         element.style.display = "none";
         // Can't attach it til later on, so we need a flag!
         var element_attached = false;
@@ -39,7 +39,8 @@ Crafty.extend({
             silver: "#c0c0c0",
             teal: "#008080",
             white: "#ffffff",
-            yellow: "#ffff00"
+            yellow: "#ffff00",
+            Munsell: "#b85900"
         };
 
         function default_value(c) {
